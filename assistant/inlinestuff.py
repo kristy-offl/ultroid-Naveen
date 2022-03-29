@@ -30,14 +30,14 @@ from . import _ult_cache
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupport"),
+        Button.url("• Repo •", url="t.me/spotify_downloa_bot"),
+        Button.url("• Support •", url="t.me/spotify_downloa"),
     ],
 ]
 
-ofox = "https://telegra.ph/file/231f0049fcd722824f13b.jpg"
-gugirl = "https://telegra.ph/file/0df54ae4541abca96aa11.jpg"
-ultpic = "https://telegra.ph/file/4136aa1650bc9d4109cc5.jpg"
+ofox = "https://telegra.ph/file/1729012f462055bc5fd69.jpg"
+gugirl = "https://telegra.ph/file/1729012f462055bc5fd69.jpg"
+ultpic = "https://telegra.ph/file/1729012f462055bc5fd69.jpg"
 
 apis = [
     "QUl6YVN5QXlEQnNZM1dSdEI1WVBDNmFCX3c4SkF5NlpkWE5jNkZV",
@@ -167,14 +167,14 @@ async def _(e):
 async def repo(e):
     res = [
         await e.builder.article(
-            title="Ultroid Userbot",
+            title="Masterolic Assistant",
             description="Userbot | Telethon",
             thumb=wb(ultpic, 0, "image/jpeg", []),
-            text="• **ULTROID USERBOT** •",
+            text="• **ULTROID ASSISTANT** •",
             buttons=SUP_BUTTONS,
         ),
     ]
-    await e.answer(res, switch_pm="Ultroid Repo.", switch_pm_param="start")
+    await e.answer(res, switch_pm="Masterolic Assistant.", switch_pm_param="start")
 
 
 @in_pattern("go", owner=True)
