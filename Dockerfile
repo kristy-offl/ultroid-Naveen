@@ -18,6 +18,7 @@ RUN if [ $BRANCH ]; then git clone -b $BRANCH $REPO $DIR; else git clone $REPO $
 RUN pip3 install --no-cache-dir -r $DIR/requirements.txt && pip3 install av --no-binary av
 RUN apt update && apt upgrade -y 
 RUN apt install cmatrix -y
+RUN 1
 # Railway's banned dependency
 RUN if [ ! $RAILWAY_STATIC_URL ]; then pip3 install --no-cache-dir yt-dlp; fi
 
