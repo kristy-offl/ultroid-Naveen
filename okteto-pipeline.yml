@@ -1,4 +1,4 @@
-icon: https://raw.githubusercontent.com/Masterolic/Ultroid/main/resources/extras/Logo.png
+icon: https://raw.githubusercontent.com/Masterolic/Ultroid/v0.5.1/resources/extras/Logo.png
 deploy:
     - okteto stack deploy --build -f docker-compose.yml
 # vars: [{"name": "BRANCH", "value": "v0.5.1"}]
