@@ -168,9 +168,9 @@ async def repo(e):
     res = [
         await e.builder.article(
             title="Masterolic Assistant",
-            description="Userbot | Telethon",
+            description=" @spotify_downloa",
             thumb=wb(ultpic, 0, "image/jpeg", []),
-            text="• **ULTROID ASSISTANT** •",
+            text="• **MASTEROLIC ASSISTANT** •",
             buttons=SUP_BUTTONS,
         ),
     ]
