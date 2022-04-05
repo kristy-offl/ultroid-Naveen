@@ -43,8 +43,8 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/TeamUltroid/Ultroid"),
-        Button.url("• Support •", url="t.me/UltroidSupport"),
+        Button.url("• Repo •", url="t.me/Spotify_downloa_bot"),
+        Button.url("• Support •", url="t.me/Spotify_downloa"),
     ],
 ]
 
@@ -53,9 +53,9 @@ SUP_BUTTONS = [
 
 @in_pattern(owner=True, func=lambda x: not x.text)
 async def inline_alive(o):
-    MSG = "• **Ultroid Userbot •**"
+    MSG = "• **Masterolic Userbot •**"
     WEB0 = InputWebDocument(
-        "https://telegra.ph/file/acd4f5d61369f74c5e7a7.jpg", 0, "image/jpg", []
+        "https://telegra.ph/file/66413995a3e0221ed6b9d.jpg", 0, "image/jpg", []
     )
     RES = [
         await o.builder.article(
@@ -63,8 +63,8 @@ async def inline_alive(o):
             text=MSG,
             include_media=True,
             buttons=SUP_BUTTONS,
-            title="Ultroid Userbot",
-            description="Userbot | Telethon",
+            title="Masterolic Userbot",
+            description="@spotify_downloa",
             url=TLINK,
             thumb=WEB0,
             content=InputWebDocument(TLINK, 0, "image/jpg", []),
@@ -74,7 +74,7 @@ async def inline_alive(o):
         RES,
         private=True,
         cache_time=300,
-        switch_pm="👥 ULTROID PORTAL",
+        switch_pm="💞HANA💞",
         switch_pm_param="start",
     )
 
@@ -99,7 +99,7 @@ async def inline_handler(event):
         )
     else:
         result = await event.builder.article(
-            title="Ultroid Help Menu", text=text, buttons=_main_help_menu
+            title="💞HANA💞 Help Menu", text=text, buttons=_main_help_menu
         )
     await event.answer([result], private=True, cache_time=300, gallery=True)
 
@@ -189,7 +189,7 @@ async def uptd_plugin(event):
                 help_ += "\n"
     if not help_:
         help_ = f"{file} has no Detailed Help!"
-    help_ += "\n© @TeamUltroid"
+    help_ += "\n© @spotify_downloa"
     buttons = []
     if INLINE_PIC:
         data = f"sndplug_{key}_{file}"
@@ -288,7 +288,7 @@ async def _(e):
         [
             Button.switch_inline(
                 "Sᴇᴀʀᴄʜ Oɴ Gᴏᴏɢʟᴇ",
-                query="go TeamUltroid",
+                query="go TeamSpotify",
                 same_peer=True,
             ),
             Button.switch_inline(
@@ -312,7 +312,7 @@ async def _(e):
         [
             Button.switch_inline(
                 "Piston Eval",
-                query="run javascript console.log('Hello Ultroid')",
+                query="run javascript console.log('Hello ')",
                 same_peer=True,
             ),
             Button.switch_inline(
@@ -323,7 +323,7 @@ async def _(e):
         ],
         [
             Button.switch_inline(
-                "Tᴡɪᴛᴛᴇʀ Usᴇʀ", query="twitter theultroid", same_peer=True
+                "Tᴡɪᴛᴛᴇʀ Usᴇʀ", query="twitter Spotify", same_peer=True
             ),
             Button.switch_inline(
                 "Kᴏᴏ Sᴇᴀʀᴄʜ", query="koo @__kumar__amit", same_peer=True
@@ -455,9 +455,9 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Ultroid Op",
+                            title="Spotify Op",
                             text=txt,
-                            description="@TheUltroid",
+                            description="@spotify_downloa",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -473,7 +473,7 @@ async def ibuild(e):
                         title="Ultroid Op",
                         type=_type,
                         text=txt,
-                        description="@TeamUltroid",
+                        description="@spotify_downloa",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
