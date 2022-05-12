@@ -1,5 +1,5 @@
 name: Ultroid
-workdir: /root/TeamUltroid
+workdir: /root/Temp-Yb
 #environment:
 #  - name=$USER
 #  - environment=development # will be changed later
